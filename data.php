@@ -66,6 +66,9 @@
 
             //membuat dan membuka file db.html
             $buka = fopen("db.html", 'a');
+            
+            //mengalihkan ke db.html
+            echo "<script>window.location='db.html'</script>";
 
             //menulis data yang telah dimasukkan
             fwrite($buka, "Data Pemantaun Covid19 Wilayah ${wil} <br>");
